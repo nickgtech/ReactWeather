@@ -25692,8 +25692,8 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'p',
-	        null,
+	        'h1',
+	        { className: 'text-center' },
 	        ' Get Weather '
 	      ),
 	      React.createElement(
@@ -25702,7 +25702,7 @@
 	        React.createElement('input', { type: 'text', ref: 'location', placeholder: 'Enter city name' }),
 	        React.createElement(
 	          'button',
-	          null,
+	          { className: 'button expanded hollow' },
 	          ' submit '
 	        )
 	      )
@@ -25716,7 +25716,7 @@
 /* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -25726,13 +25726,13 @@
 
 
 	    return React.createElement(
-	        'p',
-	        null,
-	        ' The temp in ',
+	        "p",
+	        { className: "text-center" },
+	        " The temp in ",
 	        location,
-	        ' is ',
+	        " is ",
 	        temp,
-	        ' '
+	        " "
 	    );
 	};
 
@@ -29292,15 +29292,24 @@
 /* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    "div",
 	    null,
-	    ' About component '
+	    React.createElement(
+	      "h3",
+	      { className: "text-center" },
+	      " About "
+	    ),
+	    React.createElement(
+	      "p",
+	      { className: "text-center" },
+	      " Welcome to the about page "
+	    )
 	  );
 	};
 
